@@ -1,0 +1,61 @@
+body{
+    background-color: #359cc5;
+
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
+
+/*
+#map-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #b0b0b0; 
+}*/
+/*
+#map-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}*/
+#map-title{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+#map-subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.Statediv{
+    width: 100%;
+    margin: black;
+}
+
+.Statediv path{
+    fill: rgb(162, 159, 155);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.Statediv :hover {
+    fill: #e5e5a9;
+    filter: drop-shadow(0 0 0.8px rgba(0,0,0,0.3));
+    transform: scale(1.0);
+    cursor: pointer;
+}
+

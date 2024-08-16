@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: #091921;
+  background-image: url(background2.jpg);
+  color: #000000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.heading {
+  margin: 2em 0 2em;
+  font-size: 2.5em;
+  width: 600px;
+  border: 20px solid rgba(255, 255, 255, 0.541);
+  padding: 20px;
+  margin: 120px;
+}
+
+.p1{
+  font-family: "Georgia", Times, serif;
+  font-weight: 900;
+  color:#091921
+}
