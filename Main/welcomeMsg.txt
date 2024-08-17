@@ -1,0 +1,2 @@
+<h2>Welcome to TasteTrip</h2>
+<p id="p1">-Explore various Malaysian Culinary in our website-</p>

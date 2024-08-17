@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
-  
+
+
 </head>
 
 <body>
@@ -303,7 +303,7 @@
       <!-- <a class="explore-btn" href="Gallery.html">Explore</a> -->
     </div>
 
-<!---->
+    <!---->
     <!-- <div class="slider d-flex justify-content-center align-items-center">
       <div class="content text-center">
         <h1 class="display-4">KEDAH</h1>
@@ -311,7 +311,7 @@
       </div>
     </div>-->
 
-<!---->
+    <!---->
 
     <!-- STATE1 -->
     <!-- <div class="item is-active">
@@ -350,7 +350,7 @@
         <a class="explore-btn" href="galleryKedah.html">Explore</a>
       </div>
 
-    </div> 
+    </div>
 
     <div class="item">
       <div class="content">
@@ -782,60 +782,105 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>States Info</h4>
-          <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Johor">Johor</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Kedah">Kedah</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Kelantan">Kelantan</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Melaka">Melaka</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Negeri Sembilan">Negeri Sembilan</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Pahang">Pahang</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Perak">Perak</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Perlis">Perlis</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Pulau Pinang">Pulau Pinang</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Sabah">Sabah</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Sarawak">Sarawak</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Selangor">Selangor</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Terengganu">Terengganu</a></li>
-          </ul>
+
+<!---->
+      <style>
+        .clickbtn {
+            background-color: #897965;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .clickbtn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("button").click(function () {
+            $("#div1").load("welcomeMsg.txt", function (responseTxt, statusTxt, xhr) {
+              if (statusTxt == "success")
+                alert("Malaysia Culinary");
+              if (statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+          });
+        });
+      </script>
+
+        <div id="div1">
+          <h2>TasteTrip</h2>
         </div>
-        <div class="footer-col">
-          <h4>Food Gallery</h4>
-          <ul>
-            <li><a href="galleryJohor.html">Johor</a></li>
-            <li><a href="galleryKedah.html">Kedah</a></li>
-            <li><a href="galleryKelantan.html">Kelantan</a></li>
-            <li><a href="galleryMelaka.html">Melaka</a></li>
-            <li><a href="galleryNSembilan.html">Negeri Sembilan</a></li>
-            <li><a href="galleryPahang.html">Pahang</a></li>
-            <li><a href="galleryPerak.html">Perak</a></li>
-            <li><a href="galleryPerlis.html">Perlis</a></li>
-            <li><a href="galleryPulauPinang.html">Pulau Pinang</a></li>
-            <li><a href="gallerySabah.html">Sabah</a></li>
-            <li><a href="gallerySarawak.html">Sarawak</a></li>
-            <li><a href="gallerySelangor.html">Selangor</a></li>
-            <li><a href="galleryTerengganu.html">Terengganu</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>company</h4>
-          <ul>
-            <li><a href="aboutUs.html">about us</a></li>
-            
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61564256188115&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
-            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-            <a href="https://www.instagram.com/tas.tetrip?igsh=ZTI0bDNkYXAwMzdl&utm_source=qr"><i class="fab fa-instagram"></i></a>
-            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+
+        <button class="clickbtn">Click Me</button>
+
+
+<!---->
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>States Info</h4>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Johor">Johor</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Kedah">Kedah</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Kelantan">Kelantan</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Melaka">Melaka</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Negeri Sembilan">Negeri Sembilan</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Pahang">Pahang</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Perak">Perak</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Perlis">Perlis</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Pulau Pinang">Pulau Pinang</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Sabah">Sabah</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Sarawak">Sarawak</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Selangor">Selangor</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Terengganu">Terengganu</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Food Gallery</h4>
+            <ul>
+              <li><a href="galleryJohor.html">Johor</a></li>
+              <li><a href="galleryKedah.html">Kedah</a></li>
+              <li><a href="galleryKelantan.html">Kelantan</a></li>
+              <li><a href="galleryMelaka.html">Melaka</a></li>
+              <li><a href="galleryNSembilan.html">Negeri Sembilan</a></li>
+              <li><a href="galleryPahang.html">Pahang</a></li>
+              <li><a href="galleryPerak.html">Perak</a></li>
+              <li><a href="galleryPerlis.html">Perlis</a></li>
+              <li><a href="galleryPulauPinang.html">Pulau Pinang</a></li>
+              <li><a href="gallerySabah.html">Sabah</a></li>
+              <li><a href="gallerySarawak.html">Sarawak</a></li>
+              <li><a href="gallerySelangor.html">Selangor</a></li>
+              <li><a href="galleryTerengganu.html">Terengganu</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutUs.html">about us</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61564256188115&mibextid=LQQJ4d"><i
+                  class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://www.instagram.com/tas.tetrip?igsh=ZTI0bDNkYXAwMzdl&utm_source=qr"><i
+                  class="fab fa-instagram"></i></a>
+              <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </footer>
 
